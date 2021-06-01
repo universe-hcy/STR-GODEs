@@ -1,27 +1,35 @@
->📋  A template README.md for code accompanying a Machine Learning paper
+# STR-GODEs: Spatial–Temporal-Ridership Graph ODEs for Metro Ridership Prediction
 
-# My Paper Title
-
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
+This repository is the official implementation of STR-GODEs. 
 
 >📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
 ## Requirements
 
 To install requirements:
-
-```setup
-pip install -r requirements.txt
-```
-
+- python3
+- numpy
+- yaml
+- pytorch
+- torch_geometric
+- torchdiff
+- 
 >📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
 ## Training
 
 To train the model(s) in the paper, run this command:
 
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+- SHMetro
+```
+python ggnn_train.py --config
+data/model/ggnn_sh_multigraph_rnn256_global_local_fusion_input.yaml
+```
+
+- HZMetro
+```
+python ggnn_train.py --config
+data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
 ```
 
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
@@ -30,8 +38,14 @@ python train.py --input-data <path_to_data> --alpha 10 --beta 20
 
 To evaluate my model on ImageNet, run:
 
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
+```
+- SHMetro
+```
+python ggnn_evaluation.py --config trained/sh.yaml
+```
+- HZMetro
+```
+python ggnn_evaluation.py --config trained/hz.yaml
 ```
 
 >📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
