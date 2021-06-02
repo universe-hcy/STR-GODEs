@@ -13,8 +13,13 @@ To install requirements:
 - pytorch
 - torch_geometric
 - torchdiff
-- 
+
 >📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+
+### Extract dataset
+```
+cd data && tar xvf data.tar.gz
+```
 
 ## Training
 
@@ -38,7 +43,6 @@ data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
 
 To evaluate my model on ImageNet, run:
 
-```
 - SHMetro
 ```
 python ggnn_evaluation.py --config trained/sh.yaml
