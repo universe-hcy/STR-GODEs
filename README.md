@@ -37,22 +37,20 @@ python ggnn_train.py --config
 data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
-
 ## Evaluation
 
-To evaluate my model on ImageNet, run:
+To evaluate my model, run:
 
 - SHMetro
 ```
-python ggnn_evaluation.py --config trained/sh.yaml
+python ggnn_evaluation.py --config 
+data/model/ggnn_sh_multigraph_rnn256_global_local_fusion_input.yaml
 ```
 - HZMetro
 ```
-python ggnn_evaluation.py --config trained/hz.yaml
+python ggnn_evaluation.py --config 
+data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
 ```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
 ## Pre-trained Models
 
@@ -68,9 +66,24 @@ Our model achieves the following performance on :
 
 ### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| Model STR-GODEs | 15min | 30min | 45min | 60min |
 | ------------------ |---------------- | -------------- |
 | My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| ------------------ |---------------- | -------------- |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| ------------------ |---------------- | -------------- |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| ------------------ |---------------- | -------------- |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| My awesome model   |     85%         |      95%       |
+| ------------------ |---------------- | -------------- |
 
 >📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
