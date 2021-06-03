@@ -14,7 +14,15 @@ To install requirements:
 - torch_geometric
 - torchdiff
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+A anaconda environment file py36.yml is provided in folder "test". You can activate it by modifying the prefix in it
+```
+prefix: /home/XXXXXX/.conda/envs/py36
+```
+and run the command：
+```
+conda env create -f py36.yml
+```
+
 
 ### Extract dataset
 ```
