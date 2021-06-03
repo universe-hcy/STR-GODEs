@@ -76,13 +76,13 @@ Our model achieves the following performance on :
 | experiment1_SHMetro  |     RMSE         |     85%         |      95%       |     85%         |      95%       |
 |                      |     MAPE         |     85%         |      95%       |     85%         |      95%       |
 | ------------------ |---------------- |---------------- | -------------- |---------------- | -------------- |
-|                      |     MAE         |     85%         |      95%       |     85%         |      95%       |
-| experiment2_HZMetro  |     RMSE         |     85%         |      95%       |     85%         |      95%       |
-|                      |     MAPE         |     85%         |      95%       |     85%         |      95%       |
+|                      |     MAE         |     31.68        |      32.37       |     32.06         |      30.82       |
+| experiment2_HZMetro  |     RMSE         |     48.78         |      50.33       |     50.69         |      50.45       |
+|                      |     MAPE         |     9.31%         |      9.18%       |     9.62%         |     10.20%       |
 | ------------------ |---------------- |---------------- | -------------- |---------------- | -------------- |
-|                      |     MAE         |     85%         |      95%       |     85%         |      95%       |
-| experiment2_SHMetro  |     RMSE         |     85%         |      95%       |     85%         |      95%       |
-|                      |     MAPE         |     85%         |      95%       |     85%         |      95%       |
+|                      |     MAE         |     35.17         |      35.81       |     36.21         |      35.44       |
+| experiment2_SHMetro  |     RMSE         |     61.93         |      64.34       |     67.16        |      66.99       |
+|                      |     MAPE         |     13.03%         |      13.20%       |     13.78%         |      14.87%       |
 | ------------------ |---------------- |---------------- | -------------- |---------------- | -------------- |
 |                      |     MAE         |     17.70         |      18.25       |     18.19         |      18.45       |
 | experiment3_HZMetro  |     RMSE         |     37.31         |      36.04       |     37.52         |      37.41       |
@@ -92,6 +92,7 @@ Our model achieves the following performance on :
 | experiment3_SHMetro  |     RMSE         |     38.66         |      37.36       |     36.33         |      39.72       |
 |                      |     MAPE         |     11.94%         |      11.96%       |     11.19%         |      11.02%       |
 | ------------------ |---------------- |---------------- | -------------- |---------------- | -------------- |
+
 
 >📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
