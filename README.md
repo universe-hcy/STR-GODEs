@@ -35,14 +35,12 @@ To train the model(s) in the paper, run this command:
 
 - SHMetro
 ```
-python ggnn_train.py --config
-data/model/ggnn_sh_multigraph_rnn256_global_local_fusion_input.yaml
+python ggnn_train.py --config data/config/sh.yaml
 ```
 
 - HZMetro
 ```
-python ggnn_train.py --config
-data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
+python ggnn_train.py --config data/config/hz.yaml
 ```
 
 ## Evaluation
@@ -51,13 +49,11 @@ To evaluate my model, run:
 
 - SHMetro
 ```
-python ggnn_evaluation.py --config 
-data/model/ggnn_sh_multigraph_rnn256_global_local_fusion_input.yaml
+python ggnn_evaluation.py --config data/config/hz.yaml
 ```
 - HZMetro
 ```
-python ggnn_evaluation.py --config 
-data/model/ggnn_hz_multigraph_rnn256_global_local_fusion_input.yaml
+python ggnn_evaluation.py --config data/config/hz.yaml
 ```
 
 ## Pre-trained Models
@@ -72,7 +68,9 @@ You can download pretrained models here:
 
 Our model achieves the following performance on :
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+Experiment1: conventional prediction experiment
+Experiment2: conventional prediction experiment in peak periods 
+Experiment3: irregular prediction experiment
 
 | Model STR-GODEs | metrics | 15min | 30min | 45min | 60min |
 | ----------------------- |---------------- |---------------- | -------------- |---------------- | -------------- |
