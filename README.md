@@ -84,7 +84,7 @@ python str_godes_evaluation_peak.py --config data/config/hz.yaml
 
 ## Test
 
-The Pretrained models are provided in the "test" folder:
+The pretrained models are provided in the "test" folder:
 - SHMetro
 ```
 python str_godes_evaluation.py --config test/STR_GODEs_sh.yaml
