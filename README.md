@@ -22,6 +22,16 @@ and run the command：
 ```
 conda env create -f py36.yml
 ```
+Note that CUDA version in $PATH may be different from 10.1 in py36.yml, you may need to install the corresponding version of the library file(torch-scatter, torch-cluster, torch-sparse) in the following link: 
+```
+https://pytorch-geometric.com/whl/torch-1.6.0.html
+
+pip install torch_cluster-latest+cu101-cp36-cp36m-linux_x86_64.whl
+```
+and reinstall torch-geometric：
+```
+pip install torch-geometric
+```
 
 
 ### Extract dataset
