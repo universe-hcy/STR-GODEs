@@ -100,7 +100,9 @@ python str_godes_evaluation.py --config test/STR_GODEs_hz.yaml
 Our model achieves the following performance on :
 
 Experiment1: conventional prediction experiment
+
 Experiment2: conventional prediction experiment in peak periods(7:30-9:30 and 17:30-19:30) 
+
 Experiment3: irregular prediction experiment
 
 | Model STR-GODEs | metrics | 15min | 30min | 45min | 60min |
@@ -109,9 +111,9 @@ Experiment3: irregular prediction experiment
 | experiment1_HZMetro  |     RMSE         |     37.35         |      38.41       |     39.42         |      40.81       |
 |                      |     MAPE         |     13.70%         |      13.87%       |     14.34%         |      15.37%       |
 | ----------------------- |---------------- |---------------- | -------------- |---------------- | -------------- |
-|                      |     MAE         |     85%         |      95%       |     85%         |      95%       |
-| experiment1_SHMetro  |     RMSE         |     85%         |      95%       |     85%         |      95%       |
-|                      |     MAPE         |     85%         |      95%       |     85%         |      95%       |
+|                      |     MAE         |     23.21         |      23.63       |     24.65         |      25.56       |
+| experiment1_SHMetro  |     RMSE         |     44.58         |      46.28       |     49.93         |      53.39       |
+|                      |     MAPE         |     16.99%         |      17.12%       |     17.58%         |      18.25%       |
 | ----------------------- |---------------- |---------------- | -------------- |---------------- | -------------- |
 |                      |     MAE         |     31.68        |      32.37       |     32.06         |      30.82       |
 | experiment2_HZMetro  |     RMSE         |     48.78         |      50.33       |     50.69         |      50.45       |
