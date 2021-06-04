@@ -2,8 +2,6 @@
 
 This repository is the official implementation of STR-GODEs. 
 
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
-
 ## Requirements
 
 To install requirements:
@@ -27,6 +25,10 @@ Note that CUDA version in $PATH may be different from 10.1 in py36.yml, you may 
 https://pytorch-geometric.com/whl/torch-1.6.0.html
 
 pip install torch_cluster-latest+cu101-cp36-cp36m-linux_x86_64.whl
+
+pip install torch_scatter-latest+cu101-cp36-cp36m-linux_x86_64.whl
+
+pip install torch_sparse-latest+cu101-cp36-cp36m-linux_x86_64.whl
 ```
 and reinstall torch-geometric：
 ```
@@ -45,41 +47,60 @@ To train the model(s) in the paper, run this command:
 
 - SHMetro
 ```
-python ggnn_train.py --config data/config/sh.yaml
+python str_godes_train.py --config data/config/sh.yaml
 ```
 
 - HZMetro
 ```
-python ggnn_train.py --config data/config/hz.yaml
+python str_godes_train.py --config data/config/hz.yaml
 ```
+
+By setting the "irregular" variable in the configuration file(.yaml) to "true", we can conduct irregular prediction experiments.
 
 ## Evaluation
 
-To evaluate my model, run:
+To evaluate my model, set the "save_path" variable in configuration file(.yaml) and run:
 
 - SHMetro
 ```
-python ggnn_evaluation.py --config data/config/hz.yaml
+python str_godes_evaluation.py --config data/config/sh.yaml
 ```
 - HZMetro
 ```
-python ggnn_evaluation.py --config data/config/hz.yaml
+python str_godes_evaluation.py --config data/config/hz.yaml
 ```
 
-## Pre-trained Models
+To evaluate my model in peak periods, run:
 
-You can download pretrained models here:
+- SHMetro
+```
+python str_godes_evaluation_peak.py --config data/config/sh.yaml
+```
+- HZMetro
+```
+python str_godes_evaluation_peak.py --config data/config/hz.yaml
+```
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
 
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+## Test
+
+The Pretrained models are provided in the "test" folder:
+- SHMetro
+```
+python str_godes_evaluation.py --config test/STR_GODEs_sh.yaml
+```
+- HZMetro
+```
+python str_godes_evaluation.py --config test/STR_GODEs_hz.yaml
+```
+
 
 ## Results
 
 Our model achieves the following performance on :
 
 Experiment1: conventional prediction experiment
-Experiment2: conventional prediction experiment in peak periods 
+Experiment2: conventional prediction experiment in peak periods(7:30-9:30 and 17:30-19:30) 
 Experiment3: irregular prediction experiment
 
 | Model STR-GODEs | metrics | 15min | 30min | 45min | 60min |
