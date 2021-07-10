@@ -1,0 +1,56 @@
+base_dir: data/checkpoint/sh_mrgcn_global_local_fusion
+data:
+  batch_size: 8
+  dataset_dir: data/shanghai
+  irregular: false
+  graph_pkl_filename:
+  - data/shanghai/graph_sh_conn.pkl
+  - data/shanghai/graph_sh_sml.pkl
+  - data/shanghai/graph_sh_cor.pkl
+  name: hz
+  test_batch_size: 8
+  val_batch_size: 8
+log_level: INFO
+model:
+  K: 2
+  cl_decay_steps: 200
+  dropout_prop: 0.05
+  dropout_type: zoneout
+  filter_type: chebnet
+  fusion: concat
+  global_fusion: true
+  graph_type: cso
+  horizon: 4
+  input_dim: 2
+  l1_decay: 0
+  model_type: str-gode
+  norm: true
+  num_bases: 3
+  num_branches: 1
+  num_nodes: 288
+  num_relations: 3
+  num_rnn_layers: 2
+  output_dim: 2
+  output_type: fc
+  rnn_units: 256
+  save_path: test/STR_GODEs_sh.pt
+  seq_len: 4
+  use_curriculum_learning: true
+  use_input: true
+train:
+  base_lr: 0.001
+  epoch: 0
+  epochs: 200
+  epsilon: 0.0001
+  global_step: 0
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  optimizer: adam
+  patience: 100
+  save_every_n_epochs: 5
+  steps:
+  - 60
+  - 100
+  test_every_n_epochs: 1
