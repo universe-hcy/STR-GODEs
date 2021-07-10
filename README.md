@@ -2,6 +2,8 @@
 
 This repository is the official implementation of STR-GODEs. 
 
+The setting is adapted from https://github.com/HCPLab-SYSU/PVCGN.
+
 ## Requirements
 
 To install requirements:
