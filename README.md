@@ -4,6 +4,18 @@ This repository is the official implementation of STR-GODEs.
 
 The setting is adapted from https://github.com/HCPLab-SYSU/PVCGN.
 
+If our code is helpful to you, please cite our paper
+
+```
+@article{huang2021str,
+  title={STR-GODEs: Spatial-Temporal-Ridership Graph ODEs for Metro Ridership Prediction},
+  author={Huang, Chuyu},
+  journal={arXiv preprint arXiv:2107.04980},
+  year={2021}
+}
+```
+
+
 ## Requirements
 
 To install requirements:
